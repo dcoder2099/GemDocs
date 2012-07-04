@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31E440215A4C42700DE7B6D /* vendor_gems in Resources */ = {isa = PBXBuildFile; fileRef = A31E440115A4C42700DE7B6D /* vendor_gems */; };
 		A3D224B915A3B80F00440F5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D224B815A3B80F00440F5E /* Cocoa.framework */; };
 		A3D224BB15A3B80F00440F5E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D224BA15A3B80F00440F5E /* MacRuby.framework */; };
 		A3D224C415A3B80F00440F5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3D224C215A3B80F00440F5E /* InfoPlist.strings */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A31E440115A4C42700DE7B6D /* vendor_gems */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vendor_gems; sourceTree = "<group>"; };
 		A3D224B415A3B80F00440F5E /* GemDocs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemDocs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D224B815A3B80F00440F5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A3D224BA15A3B80F00440F5E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
@@ -55,6 +57,7 @@
 		A3D224A915A3B80F00440F5E = {
 			isa = PBXGroup;
 			children = (
+				A31E440115A4C42700DE7B6D /* vendor_gems */,
 				A3D224BF15A3B80F00440F5E /* GemDocs */,
 				A3D224B715A3B80F00440F5E /* Frameworks */,
 				A3D224B515A3B80F00440F5E /* Products */,
@@ -189,6 +192,7 @@
 				A3D224CB15A3B81000440F5E /* MainMenu.xib in Resources */,
 				A3D224CE15A3B81000440F5E /* rb_main.rb in Resources */,
 				A3D224D015A3B81000440F5E /* AppDelegate.rb in Resources */,
+				A31E440215A4C42700DE7B6D /* vendor_gems in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +351,7 @@
 				A3D224D515A3B81000440F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3D224D615A3B81000440F5E /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -355,6 +360,7 @@
 				A3D224D815A3B81000440F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

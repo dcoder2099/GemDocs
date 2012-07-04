@@ -11,13 +11,16 @@ class AppDelegate
     attr_accessor :fileTextField
     
     def loadGemLockfile(sender)
-        gemlockfile = File.read(fileTextField.stringValue)
-        puts gemlockfile
+        #gemlockfile = File.read(fileTextField.stringValue)
+        #puts gemlockfile
     end
     
     def applicationDidFinishLaunching(a_notification)
         # Insert code here to initialize your application
         puts "applicationDidFinishLaunching!"
+        puts "RUBY_VERSION: #{RUBY_VERSION}"
+        puts "RUBY_RELEASE_DATE: #{RUBY_RELEASE_DATE}"
+        puts "RUBY_PLATFORM: #{RUBY_PLATFORM}"
     end
 end
 
