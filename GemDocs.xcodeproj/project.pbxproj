@@ -29,11 +29,11 @@
 /* Begin PBXFileReference section */
 		A3D224B415A3B80F00440F5E /* GemDocs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemDocs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D224B815A3B80F00440F5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		A3D224BA15A3B80F00440F5E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		A3D224C115A3B80F00440F5E /* GemDocs-Info.plist */ = {isa = PBXFileReference; path = "GemDocs-Info.plist"; sourceTree = "<group>"; };
+		A3D224BA15A3B80F00440F5E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
+		A3D224C115A3B80F00440F5E /* GemDocs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GemDocs-Info.plist"; sourceTree = "<group>"; };
 		A3D224C315A3B80F00440F5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3D224C515A3B80F00440F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3D224C715A3B80F00440F5E /* GemDocs-Prefix.pch */ = {isa = PBXFileReference; path = "GemDocs-Prefix.pch"; sourceTree = "<group>"; };
+		A3D224C715A3B80F00440F5E /* GemDocs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GemDocs-Prefix.pch"; sourceTree = "<group>"; };
 		A3D224CA15A3B81000440F5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A3D224CD15A3B81000440F5E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		A3D224CF15A3B81000440F5E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
@@ -285,10 +285,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GemDocs/GemDocs-Prefix.pch";
+				IBC_PLUGIN_SEARCH_PATHS = "$(inherited) \"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"";
 				INFOPLIST_FILE = "GemDocs/GemDocs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -302,10 +304,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GemDocs/GemDocs-Prefix.pch";
+				IBC_PLUGIN_SEARCH_PATHS = "$(inherited) \"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"";
 				INFOPLIST_FILE = "GemDocs/GemDocs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
