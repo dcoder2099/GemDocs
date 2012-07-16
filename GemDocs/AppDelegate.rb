@@ -11,8 +11,9 @@ class AppDelegate
     attr_accessor :fileTextField
     
     def loadGemLockfile(sender)
-        #gemlockfile = File.read(fileTextField.stringValue)
-        #puts gemlockfile
+        gemlockfile = File.read(fileTextField.stringValue)
+        b = Bundler::LockfileParser.new(gemlockfile)
+        puts b.specs.first
     end
     
     def applicationDidFinishLaunching(a_notification)

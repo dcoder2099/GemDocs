@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A31E440215A4C42700DE7B6D /* vendor_gems in Resources */ = {isa = PBXBuildFile; fileRef = A31E440115A4C42700DE7B6D /* vendor_gems */; };
 		A3D224B915A3B80F00440F5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D224B815A3B80F00440F5E /* Cocoa.framework */; };
-		A3D224BB15A3B80F00440F5E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D224BA15A3B80F00440F5E /* MacRuby.framework */; };
+		A3D224BB15A3B80F00440F5E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D224BA15A3B80F00440F5E /* MacRuby.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A3D224C415A3B80F00440F5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3D224C215A3B80F00440F5E /* InfoPlist.strings */; };
 		A3D224C615A3B80F00440F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D224C515A3B80F00440F5E /* main.m */; };
 		A3D224CB15A3B81000440F5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D224C915A3B81000440F5E /* MainMenu.xib */; };
@@ -260,6 +260,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -279,6 +280,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
